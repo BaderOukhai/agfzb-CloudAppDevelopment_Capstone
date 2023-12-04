@@ -16,11 +16,11 @@
     <body>
     <!--Add a nav bar here -->
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-center">
             <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Online Course</a>
-                  <a class="navbar-brand" href="#">About Us</a>
-                  <a class="navbar-brand" href="#">Contact Us</a>
+                  <a class="navbar-brand" href="{% url 'djangoapp:template' %}">Online Course</a>
+                  <a class="navbar-brand" href="{% url 'djangoapp:about' %}">About Us</a>
+                  <a class="navbar-brand" href="{% url 'djangoapp:contact' %}">Contact Us</a>
             </div>
         </div>
     </nav>
