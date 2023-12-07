@@ -12,7 +12,7 @@ async function main(params) {
       });
       cloudant.setServiceUrl(params.COUCH_URL);
       try {
-        let dbList = await cloudant.getAllDbs();
+        let dbList =await cloudant.getAllDbs();
         return { "dbs": dbList.result };
       } catch (error) {
           return { error: error.description };
